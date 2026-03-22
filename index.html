@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mom!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts for beautiful typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Screen to allow audio autoplay -->
+    <div id="start-screen" class="screen">
+        <div class="glass-card start-card">
+            <h2>I have a surprise for you!</h2>
+            <button id="start-btn">Tap to Open Your Surprise 🎁</button>
+        </div>
+    </div>
+
+    <!-- Main Screen -->
+    <div id="main-screen" class="screen hidden">
+        <!-- Background Slideshow -->
+        <div class="slideshow">
+            <!-- Images will be injected here via JavaScript -->
+        </div>
+
+        <!-- Dark overlay to ensure text is always readable -->
+        <div class="overlay"></div>
+
+        <!-- Main Content (Glassmorphism design) -->
+        <div class="content">
+            <h1 class="birthday-text">!!! Happy Birthday Mom !!!</h1>
+            <p class="subtitle">Wishing you endless joy, love, and happiness today and always.</p>
+        </div>
+
+        <!-- Background Music: Put your song.mp3 in the same folder -->
+        <audio id="bg-music" loop>
+            <!-- Replace 'song.mp3' with your actual audio file name -->
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
