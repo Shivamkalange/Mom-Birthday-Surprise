@@ -10,7 +10,10 @@ const userImages = [
     'Img5.jpg',
     'Img6.jpg',
     'Img7.jpg',
-    'Img9.jpg'
+    'Img8.jpg',
+    'Img9.jpg',
+    'Img10.jpg',
+    'Img11.jpg',
 
 ];
 
@@ -86,7 +89,7 @@ startBtn.addEventListener('click', () => {
     });
 
     // 4. Start the slideshow timer to change image every 2.3 seconds (2300 milliseconds)
-    setInterval(nextSlide, 3000);
+    setInterval(nextSlide, 3150);
 });
 
 // --- PARTICLE NETWORK EFFECT (Like aqbit.in) ---
